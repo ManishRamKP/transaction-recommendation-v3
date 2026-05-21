@@ -1,0 +1,10 @@
+Flask
+boto3
+pandas
+requests
+numpy
+openpyxl
+SQLAlchemy
+google-cloud-bigquery
+google-cloud-storage
+psycopg2-binary==2.9.9

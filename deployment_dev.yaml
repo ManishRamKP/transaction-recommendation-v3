@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: finflow-tre-v3
+  namespace: finflow-tre-v3-dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: finflow-transactionrecommendation
+  template:
+    metadata:
+      labels:
+        app: finflow-transactionrecommendation
+    spec:
+      containers:
+        - name: back-end
+          image: YOUR_GCP_REGION-docker.pkg.dev/YOUR_GCP_PROJECT_ID/YOUR_REPO/tre-v3-dev:latest
+          ports:
+            - containerPort: 8113
+            
+
+
+            

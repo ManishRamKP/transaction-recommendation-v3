@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: finflow-tre-v3
+  namespace: finflow-tre-v3-prod
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: finflow-transactionrecommendation
+  template:
+    metadata:
+      labels:
+        app: finflow-transactionrecommendation
+    spec:
+      containers:
+        - name: back-end
+          image: YOUR_AWS_ACCOUNT_ID.dkr.ecr.YOUR_REGION.amazonaws.com/tre-v3-prod:latest
+          ports:
+            - containerPort: 8113
+
+
+            

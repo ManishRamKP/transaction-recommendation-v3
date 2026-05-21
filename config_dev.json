@@ -1,0 +1,25 @@
+{
+  "aws": {
+    "aws_access_key_id": "YOUR_AWS_ACCESS_KEY_ID",
+    "aws_secret_access_key": "YOUR_AWS_SECRET_ACCESS_KEY",
+    "region_name": "ap-south-1",
+    "bucket_name": "YOUR_S3_BUCKET_NAME"
+  },
+  "athena": {
+    "s3_output_location": "s3://YOUR_S3_BUCKET_NAME/"
+  },
+  "postgres_dev": {
+    "host": "YOUR_POSTGRES_HOST",
+    "port": "YOUR_POSTGRES_PORT",
+    "db": "YOUR_POSTGRES_DB",
+    "user": "YOUR_POSTGRES_USER",
+    "password": "YOUR_POSTGRES_PASSWORD"
+  },
+  "postgres_prod": {
+    "host": "YOUR_POSTGRES_HOST",
+    "port": "YOUR_POSTGRES_PORT",
+    "db": "YOUR_POSTGRES_DB",
+    "user": "YOUR_POSTGRES_USER",
+    "password": "YOUR_POSTGRES_PASSWORD"
+  }
+}

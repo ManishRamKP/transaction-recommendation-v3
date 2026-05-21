@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: finflow-tre-v3
+  namespace: finflow-tre-v3-prod
+  labels:
+    app: finflow-transactionrecommendation
+spec:
+  type: ClusterIP
+  selector:
+    app: finflow-transactionrecommendation
+  ports:
+    - protocol: TCP
+      port: 8113
+      targetPort: 8113

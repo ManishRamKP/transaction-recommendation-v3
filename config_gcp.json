@@ -1,0 +1,35 @@
+{
+  "aws": {
+    "aws_access_key_id": "YOUR_AWS_ACCESS_KEY_ID",
+    "aws_secret_access_key": "YOUR_AWS_SECRET_ACCESS_KEY",
+    "region_name": "ap-south-1",
+    "bucket_name": "YOUR_S3_BUCKET_NAME"
+  },
+  "athena": {
+    "s3_output_location": "s3://YOUR_S3_BUCKET_NAME/"
+  },
+  "postgres": {
+    "host": "YOUR_POSTGRES_HOST",
+    "port": "5432",
+    "db": "postgres",
+    "user": "postgres",
+    "password": "YOUR_POSTGRES_PASSWORD"
+  },
+  "gcp": {
+    "project_id": "YOUR_GCP_PROJECT_ID",
+    "bucket_name": "YOUR_GCS_BUCKET_NAME",
+    "credentials": {
+      "type": "service_account",
+      "project_id": "YOUR_GCP_PROJECT_ID",
+      "private_key_id": "YOUR_PRIVATE_KEY_ID",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nYOUR_PRIVATE_KEY_HERE\n-----END PRIVATE KEY-----\n",
+      "client_email": "YOUR_SERVICE_ACCOUNT@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com",
+      "client_id": "YOUR_CLIENT_ID",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/YOUR_SERVICE_ACCOUNT%40YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com",
+      "universe_domain": "googleapis.com"
+    }
+  }
+}

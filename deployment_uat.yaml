@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: finflow-tre-v3
+  namespace: finflow-tre-v3-uat
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: finflow-transactionrecommendation
+  template:
+    metadata:
+      labels:
+        app: finflow-transactionrecommendation
+    spec:
+      containers:
+        - name: back-end
+          image: 
+          ports:
+            - containerPort: 8113

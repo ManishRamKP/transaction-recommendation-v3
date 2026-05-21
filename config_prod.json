@@ -1,0 +1,18 @@
+{
+  "aws": {
+    "aws_access_key_id": "YOUR_AWS_ACCESS_KEY_ID",
+    "aws_secret_access_key": "YOUR_AWS_SECRET_ACCESS_KEY",
+    "region_name": "ap-south-1",
+    "bucket_name": "YOUR_S3_BUCKET_NAME"
+  },
+  "athena": {
+    "s3_output_location": "s3://YOUR_S3_BUCKET_NAME/"
+  },
+  "postgres": {
+    "host": "YOUR_RDS_HOST.rds.amazonaws.com",
+    "port": 5432,
+    "db": "postgres",
+    "user": "postgres",
+    "password": "YOUR_POSTGRES_PASSWORD"
+  }
+}
